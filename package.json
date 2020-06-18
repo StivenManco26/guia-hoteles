@@ -1,0 +1,16 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "Primer proyecto Nodejs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://StivenManco26@bitbucket.org/StivenManco26/guia-hoteles.git"
+  },
+  "author": "Stiven Manco",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/StivenManco26/guia-hoteles#readme"
+}
