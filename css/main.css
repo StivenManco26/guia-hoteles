@@ -32,6 +32,9 @@
 	padding-top: 10px;
 }
 
+.row-info {
+	padding-bottom: 20px;
+}
 footer{
 	padding: 10px 10px 0 10px;
 	background-color: yellow;
