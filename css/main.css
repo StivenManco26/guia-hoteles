@@ -28,6 +28,10 @@
 	height: 100%;
 }
 
+.tab-content {
+	padding-top: 10px;
+}
+
 footer{
 	padding: 10px 10px 0 10px;
 	background-color: yellow;
