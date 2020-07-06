@@ -82,6 +82,7 @@
             <h6 class="card-subtittle text-muted">Colombia</h6>
             <img class="card-img-top" src="./images/Cartagena.jpg">
     				<p class="card-text">Ofrece vistas a la ciudad y está situado en Cartagena, a 9 km del parque principal.</p>
+            <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
     			</div>
     			<div>
     				<button class="btn btn-primary btn-reserva"><span class="oi oi-dollar btn-reserva-icon"></span>ver precio</button>
@@ -93,6 +94,7 @@
             <h6 class="card-subtittle text-muted">Colombia</h6>
             <img class="card-img-top" src="./images/Medellin.jpg">
             <p class="card-text">Ofrece alojamiento en Medellín, a 1,7 km del parque Lleras</p>
+            <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
     			</div>
     			<div>
     				<button class="btn btn-primary btn-reserva"><span class="oi oi-dollar btn-reserva-icon"></span>ver precio</button>
@@ -104,6 +106,7 @@
             <h6 class="card-subtittle text-muted">Colombia</h6>
             <img class="card-img-top" src="./images/Bogota.jpg">
             <p class="card-text">Ofrece centro de spa y bañera de hidromasaje</p>
+            <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
     			</div>
     			<div>
     				<button class="btn btn-primary btn-reserva"><span class="oi oi-dollar btn-reserva-icon"></span>ver precio</button>
@@ -115,6 +118,7 @@
             <h6 class="card-subtittle text-muted">Colombia</h6>
             <img class="card-img-top" src="./images/Cali.jpg">
             <p class="card-text">Ubicado en un edificio moderno con terraza, bañera de hidromasaje y zona de barbacoa</p>
+            <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
     			</div>
     			<div>
     				<button class="btn btn-primary btn-reserva"><span class="oi oi-dollar btn-reserva-icon"></span>ver precio</button>
@@ -126,12 +130,41 @@
             <h6 class="card-subtittle text-muted">Colombia</h6>
             <img class="card-img-top" src="./images/SanAndres.jpg">
             <p class="card-text">Alojamiento lujoso con una piscina climatizada al aire libre</p>
+            <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
     			</div>
     			<div>
     				<button class="btn btn-primary btn-reserva"><span class="oi oi-dollar btn-reserva-icon"></span>ver precio</button>
     			</div>
       		</div>
       	</div>
+    </div>
+
+    <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contacto con el hotel</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Tu email:</label>
+                <input type="text" id="recipient-name" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Mensaje:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success">Enviar</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer>
