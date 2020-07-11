@@ -37,8 +37,10 @@
           </li>
   		</div>
   	</nav>
-    <div class="jumbotron">
-    	<h1>Hoteles</h1>
+    <div class="jumbotron jumbotron-fluid bg-dark">
+      <div class="container text-white">
+    	   <h1>Hoteles</h1>
+      </div>
     </div>        
     <div class="container">
       <nav ari-label="breadcrumb">
@@ -73,6 +75,11 @@
     	</div>
     	<br>
       <div id="carouselControls" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselControls" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselControls" data-slide-to="1"></li>
+          <li data-target="#carouselControls" data-slide-to="2"></li>
+        </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="d-block w-100" alt="Primer slide" src="./images/Discount.jpg">
@@ -104,7 +111,7 @@
             <h6 class="card-subtittle text-muted">Colombia</h6>
             <img class="card-img-top" src="./images/Cartagena.jpg">
     				<p class="card-text">Ofrece vistas a la ciudad y está situado en Cartagena, a 9 km del parque principal.</p>
-            <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+            <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
     			</div>
     			<div>
     				<button class="btn btn-primary btn-reserva"><span class="oi oi-dollar btn-reserva-icon"></span>ver precio</button>
@@ -189,7 +196,7 @@
       </div>
     </div>
 
-    <footer>
+    <footer >
     	<div class="row">
 	    	<div class="col-sm-4 d-flex flex-column">
 	    		<a href="https://www.facebook.com">facebook</a>
@@ -206,10 +213,10 @@
 	    		</address>
 	    	</div>
 	    	<div class="col-sm-4 d-flex flex-column align-items-end">
-	    		<a href="https://www.facebook.com">Nosotros</a>
-	    		<a href="https://www.twitter.com">Precios</a>
-	    		<a href="https://www.instagram.com">Términos y condiciones</a>
-	    		<a href="https://www.google.com">Contacto</a>
+	    		<a href="./about.html">Nosotros</a>
+	    		<a href="./price.html">Precios</a>
+	    		<a href="./terms.html">Términos y condiciones</a>
+	    		<a href="./support.html">Contacto</a>
 	    	</div>
 	    	<div class="col-sm-4">
 	    		
@@ -228,7 +235,26 @@
         $('[data-toggle="popover"]').popover();
         $('.carousel').carousel({
           interval: 3000
-        })
+        });
+        $('#contacto').on('show.bs.modal', function(e){
+          console.log('El modal se está mostrando');
+
+          $('#contactoBtn').removeClass('btn-outline-success');
+          $('#contactoBtn').addClass('btn-primary');
+          $('#contactoBtn').prop('disabled', true);
+
+0
+        });
+        $('#contacto').on('shown.bs.modal', function(e){
+          console.log('El modal se mostró');
+        });
+        $('#contacto').on('hide.bs.modal', function(e){
+          console.log('El modal se oculta');
+        });
+        $('#contacto').on('hidden.bs.modal', function(e){
+          console.log('El modal se ocultó');
+         $('#contactoBtn').prop('disabled', false);
+        });
     });
     </script>
   </body>
